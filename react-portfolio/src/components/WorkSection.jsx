@@ -15,9 +15,13 @@ export const WorkSection = () => {
                     <div className="space-y-3">
                         <h3 className="text-2xl font-semibold">Research Assistant</h3>
                         <h4> <span className="italic">Williams College</span> | <span className="italic">June 2025 - August 2025</span></h4>
-                        <p className="items-center text-sm text-muted-foreground max-w-40">
-                            Working on a team of four, I assisted in the development of a real-time interaction system that combined Unity, a Teensy microcontroller, and an ODrive motor controller to simulate tactile object collisions through robotic haptic feedback. Using a custom C-based driver, we synchronized VR object tracking, collision detection, and motor control in real time. Multiple experiments were run to measure feedback accuracy and motor latency.
-                        </p>
+                        <div className="flex justify-center">
+                            <p className="indent-8 text-left text-sm text-muted-foreground max-w-80">
+                                Working on a team of four, I assisted in the development of a <strong className="text-primary">real-time interaction system</strong> that combined Unity, a Teensy microcontroller, and an ODrive motor controller to simulate tactile object collisions through robotic haptic feedback. 
+                                Using a custom <strong className="text-primary">C-based driver</strong>, we synchronized VR object tracking, collision detection, and motor control in real time. 
+                                Multiple experiments were run to measure feedback accuracy and motor latency.
+                            </p>
+                        </div>
 
                         <div className="flex gap-4 pt-4 justify-center">
                             <a 
