@@ -48,7 +48,7 @@
 
     --card: 0 0% 100%;
     
-    --primary: 250 47% 60%;
+    --primary: 212 55.1% 55%;
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
@@ -103,7 +103,7 @@
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 10px rgba(167,139,250,0.5);
+  text-shadow: 0 0 10px rgba(140,243,250,0.8);
 }
 
 @utility card-hover {
@@ -118,7 +118,7 @@
 }
 
 @utility fancy-button {
-  @apply px-5 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95;
+  @apply px-5 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(140,243,250,0.8)] hover:scale-105 active:scale-95;
 }
 #root {
   max-width: 100%;
