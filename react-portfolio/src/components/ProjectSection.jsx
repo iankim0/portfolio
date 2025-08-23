@@ -6,7 +6,7 @@ const projects = [
         title: "Stacked Lifts",
         description: "Full-Stack Workout Tracker using React",
         image: "/projects/stacked.png",
-        tags: ["React", "Supabase"],
+        tags: ["React", "Supabase", "Tailwind CSS"],
         githubUrl: "https://github.com/iankim0/stacked",
     },
     {
