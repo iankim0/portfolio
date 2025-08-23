@@ -6,7 +6,6 @@ const navItems = [
     {name: "Home", href: "#hero"},
     {name: "Projects", href: "#projects"},
     {name: "Work Experience", href: "#work"},
-    {name: "Contact", href: "#contact"},
 ]
 
 export const NavBar = () => {
@@ -15,7 +14,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.screenY > 10);  
+            setIsScrolled(window.scrollY > 10);  
         }
 
         window.addEventListener("scroll", handleScroll);    

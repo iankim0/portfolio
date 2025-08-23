@@ -1,4 +1,5 @@
 import { ArrowDown, File, Github, Linkedin, Mail } from "lucide-react"
+import {cn} from '@/lib/utils.js';
 
 export const HeroSection = () => {
 
@@ -26,15 +27,18 @@ export const HeroSection = () => {
             alert("Email copied to clipboard")
         }
     }
+    
     return (
         <section 
             id="hero" 
             className="relative min-h-screen flex flex-col items-center justify-center px-4"
         >
             <div className="container max-w-4xl mx-auto z-10">
-                <div className="space-y-6">
-                    <h1 className="text-5xl md:text-8xl font-bold tracking-tight">
-                        <span className="text-primary opacity-0 animate-fade-in-delay-1">Ian Kim</span>
+                <div className={cn("space-y-6 border border-blue-500/20 rounded-lg p-6 bg-blue-500/5 backdrop-blur-xs",
+                    "shadow-lg shadow-black/10"
+                )}>
+                    <h1 className="text-5xl md:text-8xl font-bold tracking-tight drop-shadow-lg">
+                        <span className="bg-gradient-to-b from-blue-500 to-blue-300 bg-clip-text text-transparent opacity-0 animate-fade-in-delay-1">Ian Kim</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
@@ -50,7 +54,7 @@ export const HeroSection = () => {
 
 
                     <div className="py-4">
-                        <a href="#projects" className="py-4 fancy-button opacity-0 animate-fade-in-delay-4">
+                        <a href="#projects" className="py-4 blue-glass opacity-0 animate-fade-in-delay-4">
                             View My Work
                         </a>
                     </div>
