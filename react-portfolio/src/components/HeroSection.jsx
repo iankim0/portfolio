@@ -3,14 +3,7 @@ import {cn} from '@/lib/utils.js';
 
 export const HeroSection = () => {
 
-    const handleResumeClick = () => {
-        const link = document.createElement("a")
-        link.href = "/resume.pdf"
-        link.download = "IanKimResume.pdf"
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-    }
+
 
     const handleEmailClick = async () => {
         const email = "iank0426@gmail.com"
@@ -49,7 +42,7 @@ export const HeroSection = () => {
                         <a href="https://github.com/iankim0" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300"> <Github size={40}/> </a>
                         <a href="https://www.linkedin.com/in/ian-kim9" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300"> <Linkedin size={40}/> </a>
                         <button onClick={handleEmailClick} title="Copy Email" className="hover:text-primary transition-colors duration-300"> <Mail size={40}/> </button>
-                        <button onClick={handleResumeClick} title="Download Resume" className="hover:text-primary transition-colors duration-300"> <File size={40}/> </button>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" title="View Resume" className="hover:text-primary transition-colors duration-300"> <File size={40}/> </a>
                     </div>
 
 
