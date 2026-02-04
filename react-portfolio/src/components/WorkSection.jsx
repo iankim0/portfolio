@@ -18,6 +18,24 @@ const WORK_EXPERIENCES = [
     },
     {
         id: 2,
+        role: "Teaching Assistant",
+        company: "Williams College",
+        period: "September 2025 - Present",
+        description: (
+            <>
+                I currently work with the Computer Science Department as a teaching assistant. Through lab and help hours, I help students debug code and reinforce core concepts.
+                <div className="indent-0 mt-2">
+                    <ul className="space-y-1 text-xs">
+                        <li><span className="font-semibold">Fall 2025:</span> Data Structures and Advanced Programming</li>
+                        <li><span className="font-semibold">Spring 2026:</span> Computer Organization</li>
+                    </ul>
+                </div>
+            </>
+        ),
+        imageSrc: "work/williams.svg"
+    },
+    {
+        id: 3,
         role: "Research Assistant",
         company: "Williams College",
         period: "June 2025 - August 2025",
@@ -51,9 +69,9 @@ export const WorkSection = () => {
                                 <h3 className="text-2xl font-semibold">{experience.role}</h3>
                                 <h4> <span className="italic">{experience.company}</span> | <span className="italic">{experience.period}</span></h4>
                                 <div className="flex justify-center">
-                                    <p className="indent-8 text-left text-sm text-muted-foreground max-w-80">
+                                    <div className="indent-8 text-left text-sm text-muted-foreground max-w-80">
                                         {experience.description}
-                                    </p>
+                                    </div>
                                 </div>
 
                                 {experience.githubLink && (
