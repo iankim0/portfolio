@@ -1,11 +1,12 @@
-import {cn} from '@/lib/utils.js';
+import { cn } from '@/lib/utils.js';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const navItems = [
-    {name: "Home", href: "#hero"},
-    {name: "Projects", href: "#projects"},
-    {name: "Work Experience", href: "#work"},
+    { name: "Home", href: "#hero" },
+    { name: "Work Experience", href: "#work" },
+    { name: "Projects", href: "#projects" },
+
 ]
 
 export const NavBar = () => {
@@ -14,17 +15,17 @@ export const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);  
+            setIsScrolled(window.scrollY > 10);
         }
 
-        window.addEventListener("scroll", handleScroll);    
+        window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-    return(
+    return (
         <div className='flex justify-center mt-4'>
-            <nav className={cn("fixed w-0.4 z-40 transition-all duration-300 items-center", 
-                    "py-3 glass-effect"
-                )}>
+            <nav className={cn("fixed w-0.4 z-40 transition-all duration-300 items-center",
+                "py-3 glass-effect"
+            )}>
                 <div className='container flex items-center justify-center'>
                     {/* Desktop NavBar */}
                     <div className='flex space-x-8'>
