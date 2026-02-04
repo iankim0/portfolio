@@ -1,5 +1,4 @@
-import { Github, X } from "lucide-react"
-import { useState } from "react"
+import { Github } from "lucide-react"
 
 const WORK_EXPERIENCES = [
     {
@@ -53,8 +52,6 @@ const WORK_EXPERIENCES = [
 ]
 
 export const WorkSection = () => {
-    const [selectedImage, setSelectedImage] = useState(null)
-
     return (
         <section id="work" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
@@ -93,41 +90,13 @@ export const WorkSection = () => {
                                     src={experience.imageSrc}
                                     alt={experience.imageAlt}
                                     className="w-1/2 h-auto object-cover transition-transform duration-500 hover:scale-110 cursor-pointer"
-                                    onClick={() => setSelectedImage(experience.imageSrc)}
+                                    onClick={() => window.open(experience.imageSrc, '_blank')}
                                 />
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-
-            {/* Modal Overlay */}
-            {selectedImage && (
-                <div
-                    className="fixed inset-0 bg-black/50 z-50"
-                    onClick={() => setSelectedImage(null)}
-                >
-                    <div
-                        className="top-0 left-0 w-full h-1/2 flex items-center justify-center"
-                    >
-                        <div className="relative w-auto h-auto max-w-[30vw] max-h-[30vh]">
-                            <button
-                                onClick={() => setSelectedImage(null)}
-                                className="absolute -top-8 -right-8 text-black hover:text-gray-600 transition-colors bg-white rounded-full p-1 shadow-lg"
-                            >
-                                <X size={20} />
-                            </button>
-
-                            <img
-                                src={selectedImage}
-                                alt="Work Experience"
-                                className="w-full h-full object-contain rounded-lg shadow-2xl"
-                                onClick={(e) => e.stopPropagation()}
-                            />
-                        </div>
-                    </div>
-                </div>
-            )}
         </section>
     )
 }
