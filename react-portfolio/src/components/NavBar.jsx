@@ -23,14 +23,23 @@ export const NavBar = () => {
     }, []);
     return (
         <div className='flex justify-center mt-4'>
-            <nav className={cn("fixed w-0.4 z-40 transition-all duration-300 items-center",
-                "py-3 glass-effect"
+            <nav className={cn(
+                "fixed z-40 transition-all duration-300 items-center py-3",
+                isScrolled
+                    ? "w-0.4 nav-scrolled rounded-full"
+                    : "w-auto bg-transparent"
             )}>
                 <div className='container flex items-center justify-center'>
                     {/* Desktop NavBar */}
                     <div className='flex space-x-8'>
                         {navItems.map((item, key) => (
-                            <a key={key} href={item.href} className='text-foreground/80 hover:text-primary transition-colors duration-300'> {item.name} </a>
+                            <a
+                                key={key}
+                                href={item.href}
+                                className='text-white/90 hover:text-white border-b-2 border-transparent hover:border-white transition-all duration-300 pb-1'
+                            >
+                                {item.name}
+                            </a>
                         ))}
                     </div>
                 </div>
