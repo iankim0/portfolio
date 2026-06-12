@@ -23,7 +23,7 @@ export const Home = () => {
                 <div className="flex flex-wrap gap-x-5 gap-y-1.5 text-sm">
                     <Link href="https://github.com/iankim0">GitHub</Link>
                     <Link href="https://www.linkedin.com/in/ian-kim9">LinkedIn</Link>
-                    <Link onClick={copyEmail}>iank0426@gmail.com</Link>
+                    <Link onClick={copyEmail}>Email</Link>
                     <Link href="/resume.pdf">Resume</Link>
                 </div>
             </section>
