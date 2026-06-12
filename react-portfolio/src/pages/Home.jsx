@@ -50,7 +50,7 @@ export const Home = () => {
                             )}
                             {exp.githubUrl && (
                                 <div className="mt-2.5">
-                                    <Link href={exp.githubUrl}>{exp.github}</Link>
+                                    <Link href={exp.githubUrl}>GitHub</Link>
                                 </div>
                             )}
                         </div>
