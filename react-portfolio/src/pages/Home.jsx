@@ -68,8 +68,8 @@ export const Home = () => {
                             <div className="flex items-baseline gap-4 mb-1.5">
                                 <span className="font-medium">{proj.title}</span>
                                 <div className="flex items-center gap-3 ml-auto shrink-0 text-sm">
-                                    <Link href={proj.githubUrl}>GitHub</Link>
                                     {proj.demoUrl && <Link href={proj.demoUrl}>Demo</Link>}
+                                    <Link href={proj.githubUrl}>GitHub</Link>
                                 </div>
                             </div>
                             <p className="text-sm text-foreground/70 leading-relaxed mb-1.5">{proj.description}</p>
