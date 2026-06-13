@@ -23,7 +23,7 @@ export const WORK = [
         id: 3,
         role: "Research Assistant",
         company: "Williams College",
-        period: "June – August 2025",
+        period: "June 2025 – August 2025",
         description: "Working on a team of four, I assisted in the development of a real-time interaction system combining Unity, a Teensy microcontroller, and an ODrive motor controller to simulate tactile object collisions through robotic haptic feedback. Using a custom C-based driver, we synchronized VR object tracking, collision detection, and motor control in real time.",
         github: "github.com/iankim0/wiglet",
         githubUrl: "https://github.com/iankim0/wiglet",
