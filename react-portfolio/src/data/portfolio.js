@@ -32,22 +32,38 @@ export const WORK = [
 
 export const PROJECTS = [
     {
+        slug: "poke-net",
+        title: "PokéNet",
+        description: "Metric learning model that identifies Gen 1 Pokémon",
+        tags: ["Computer Vision", "AI", "Python"],
+        github: "github.com/iankim0/poke-net",
+        githubUrl: "https://github.com/iankim0/poke-net",
+        demo: "poke-net.streamlit.app",
+        demoUrl: "https://poke-net.streamlit.app",
+        read: "medium.com/@iankim0/pokénet-computer-vision-for-pokémon-14e7a7f8ba1c",
+        readUrl: "https://medium.com/@iankim0/pokénet-computer-vision-for-pokémon-14e7a7f8ba1c"
+    },
+    {
         slug: "exercise-dsl",
         title: "LIFT",
         description: "Workout app with custom DSL to streamline input processes",
-        tags: ["React", "TypeScript"],
+        tags: ["Programming Languages", "React", "TypeScript"],
         github: "github.com/iankim0/exercise-dsl",
         githubUrl: "https://github.com/iankim0/exercise-dsl",
         demo: "exercise-dsl.vercel.app",
         demoUrl: "https://exercise-dsl.vercel.app",
+        read: "medium.com/@iankim0/i-fixed-workout-apps-7fc79338d78f",
+        readUrl: "https://medium.com/@iankim0/i-fixed-workout-apps-7fc79338d78f"
     },
     {
         slug: "red-prompt",
         title: "RedPrompt",
         description: "LLM Prompt Injection Testing Framework",
-        tags: ["Python", "LLMs"],
+        tags: ["Security", "LLMs","Python"],
         github: "github.com/iankim0/red-prompt",
         githubUrl: "https://github.com/iankim0/red-prompt",
+        read: "final-report.pdf",
+        readUrl: "/final-report.pdf"
     }
 ]
 
